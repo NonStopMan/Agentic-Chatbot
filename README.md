@@ -33,14 +33,12 @@ This is a monorepo containing:
 ### Development Setup
 
 1. **Clone the repository**
-
 ```bash
 git clone https://github.com/NonStopMan/Agentic-Chatbot.git
 cd Agentic-Chatbot
 ```
 
 2. **Frontend Setup**
-
 ```bash
 cd frontend
 npm install
@@ -49,7 +47,6 @@ npm run dev
 ```
 
 3. **Backend Setup**
-
 ```bash
 cd backend
 python -m venv venv
@@ -60,7 +57,6 @@ uvicorn app.main:app --reload
 ```
 
 4. **Using Docker Compose** (Recommended)
-
 ```bash
 docker-compose up --build
 ```
@@ -98,7 +94,6 @@ agentic-chatbot/
 ## 🛠️ Tech Stack
 
 ### Frontend
-
 - React 18 with TypeScript
 - Vite for build tooling
 - TailwindCSS + shadcn/ui for styling
@@ -107,7 +102,6 @@ agentic-chatbot/
 - React Query for server state
 
 ### Backend
-
 - FastAPI for async Python web framework
 - Socket.io for WebSocket communication
 - LangChain for AI orchestration
@@ -118,8 +112,8 @@ agentic-chatbot/
 
 ## 📋 Development Phases
 
-- [x] **Phase 1**: Foundation - Basic chat with streaming
-- [ ] **Phase 2**: Multi-provider support and persistence
+- [x] **Phase 1**: Foundation - Basic chat with streaming ✅
+- [x] **Phase 2**: Multi-provider support and persistence ✅
 - [ ] **Phase 3**: RAG implementation
 - [ ] **Phase 4**: Tool calling
 - [ ] **Phase 5**: Multi-agent workflows
@@ -128,14 +122,12 @@ agentic-chatbot/
 ## 🔑 Environment Variables
 
 ### Frontend (.env)
-
 ```
 VITE_API_URL=http://localhost:8000
 VITE_WS_URL=ws://localhost:8000
 ```
 
 ### Backend (.env)
-
 ```
 DATABASE_URL=postgresql://user:password@localhost:5432/chatbot
 REDIS_URL=redis://localhost:6379
